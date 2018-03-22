@@ -1,0 +1,10 @@
+Compile Manager
+Window
+Synthax
+Autocomplete
+Erori
+Search
+File Manager
+Plugins
+Breakpoint-uri
+Views
