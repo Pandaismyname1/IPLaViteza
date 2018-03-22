@@ -3,6 +3,20 @@ import java.util.List;
 
 public class FileManager extends View {
 
+  private static FileManager instance;
+
+  public static FileManager getInstance()
+  {
+    if (instance==null)
+    {
+      return new FileManager();
+    }
+    else
+    {
+      return instance;
+    }
+  }
+
   public List<File> files;
 
   public Integer newAttr;
