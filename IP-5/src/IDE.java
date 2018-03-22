@@ -6,6 +6,7 @@ public class IDE {
     public Vector  myCompiler;
 
   public void newProject() {
+      System.out.println("M - The IDE created a new project");
   }
 
   public void openProject() {
@@ -15,6 +16,8 @@ public class IDE {
   }
 
     public static void main(String[] args) {
+
+        System.out.println("C - I am the IDE");
 
     }
 

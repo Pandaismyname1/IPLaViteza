@@ -6,6 +6,10 @@ public class Content extends View {
 
     public Tab myTab;
 
+  public Content() {
+    System.out.println("C - I'm a Content Viewer");
+  }
+
   public void closeTab() {
   }
 

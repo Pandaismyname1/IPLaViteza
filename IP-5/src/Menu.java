@@ -1,5 +1,9 @@
 public class Menu extends View {
 
+  public Menu() {
+    System.out.println("C - I'm a Menu");
+  }
+
   public void file() {
   }
 

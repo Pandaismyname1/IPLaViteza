@@ -6,4 +6,8 @@ public class Window {
     public Vector  myIDE;
     public Vector  myView;
 
+    public Window() {
+        System.out.println("C - I am the window");
+    }
+
 }

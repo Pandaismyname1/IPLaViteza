@@ -7,16 +7,24 @@ public class FileManager extends View {
 
   public Integer newAttr;
 
+
+  public FileManager() {
+    System.out.println("C - I'm a File Manager");
+  }
+
   public void newFile() {
   }
 
   public void openFile() {
+
+    System.out.println("M - The File Manager loaded a file");
   }
 
   public void deleteFile() {
   }
 
   public void saveFile() {
+    System.out.println("M - The File Manager saved a file");
   }
 
   public void saveAs() {

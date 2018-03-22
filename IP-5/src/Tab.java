@@ -8,4 +8,7 @@ public class Tab {
    */
   public Vector  myContent;
 
+    public Tab() {
+        System.out.println("C - I'm a Tab in the Content Viewer");
+    }
 }
