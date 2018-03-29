@@ -15,8 +15,8 @@ public class MailComposer {
         final Pattern mailCharacters = Pattern.compile("[a-z0-9!#$%&'*/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         final Pattern mailFormat = Pattern.compile("^(.+)@(.+)$");
 
-        Matcher matcher = mailCharacters.matcher(adresa);
-        Matcher matcher1 = mailFormat.matcher(adresa);
+        Matcher matcher = mailCharacters.matcher(address);
+        Matcher matcher1 = mailFormat.matcher(address);
 
         if (matcher.find() && matcher1.find()) {
             return true;
