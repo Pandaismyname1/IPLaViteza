@@ -11,7 +11,7 @@ public class MailComposer {
     public void send() {
     }
 
-    public boolean verifyEmailAddress(address) {
+    public boolean verifyEmailAddress(String address) {
         final Pattern mailCharacters = Pattern.compile("[a-z0-9!#$%&'*/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
         final Pattern mailFormat = Pattern.compile("^(.+)@(.+)$");
 
