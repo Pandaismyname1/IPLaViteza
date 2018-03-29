@@ -2,7 +2,8 @@ import java.util.Vector;
 
 public class Email {
 
-    public Vector  myFolder;
-    public Vector  myFolder;
+    public String Subject;
+    public String Message;
+    public String Address;
 
 }
