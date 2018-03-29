@@ -25,6 +25,16 @@ public class MailComposer {
         }
     }
 
+    public boolean checkAttachmentSize(String Path, int maxFileSizeInMB)
+    {
+      File file = new File(Path);
+      if(file.length()*1024*1024<maxFileSizeInMB)
+      {
+        return true;
+      }
+      return false;
+    }
+
     public void saveDraft() {
     }
 
