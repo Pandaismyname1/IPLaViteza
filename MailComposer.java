@@ -47,12 +47,19 @@ public class MailComposer {
     public void getFileSize() {
     }
 
-    public boolean serialize(Email mailToSerialize)
+    public boolean serialize(Email mailToSerialize,String Path)
     {
-      FileOutputStream fout = new FileOutputStream();
-      ObjectOutputStream oos = new ObjectOutputStream(fout);
-      oos.writeObject(MyClassList);
+      try {
+        FileOutputStream fout = new FileOutputStream(Path);
+        ObjectOutputStream oos = new ObjectOutputStream(fout);
+        oos.writeObject(mailToSerialize);
+      }
+      catch (IOException e)
+      {
+        return false
+      }
+      return true;
     }
-    public boolean deserialize(String pathToFIle);
+    boolean checkIfFileExists(String pathToFIle);
 
 }
