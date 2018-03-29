@@ -59,6 +59,7 @@ public class MailComposer {
         return false
       }
       return true;
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
     public boolean deserialize(String pathToFIle)
@@ -70,6 +71,10 @@ public class MailComposer {
         Path path = Paths.get(pathToFIle);
         return Files.exists(path);
     }
+>>>>>>> 8da08b6a7712f433607cbf172a617007cdddc450
+=======
+    }
+    boolean checkIfFileExists(String pathToFIle);
 >>>>>>> 8da08b6a7712f433607cbf172a617007cdddc450
 
 }
