@@ -9,12 +9,9 @@ public class FileManager extends View {
   {
     if (instance==null)
     {
-      return new FileManager();
+      instance = new FileManager();
     }
-    else
-    {
-      return instance;
-    }
+    return instance;
   }
 
   public List<File> files;
