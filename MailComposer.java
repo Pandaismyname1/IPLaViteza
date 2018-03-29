@@ -2,29 +2,39 @@ import java.util.Vector;
 
 public class MailComposer {
 
-  public String address;
+    public String address;
 
-  public File attachment;
+    public File attachment;
 
-    public Vector  myClient;
+    public Vector myClient;
 
-  public void send() {
-  }
+    public void send() {
+    }
 
-  public boolean verifyEmailAddress( address) {
-  return false;
-  }
+    public boolean verifyEmailAddress(address) {
+        final Pattern mailCharacters = Pattern.compile("[a-z0-9!#$%&'*/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?");
+        final Pattern mailFormat = Pattern.compile("^(.+)@(.+)$");
 
-  public void saveDraft() {
-  }
+        Matcher matcher = mailCharacters.matcher(adresa);
+        Matcher matcher1 = mailFormat.matcher(adresa);
 
-  public void attach() {
-  }
+        if (matcher.find() && matcher1.find()) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
-  public void checkFile() {
-  }
+    public void saveDraft() {
+    }
 
-  public void getFileSize() {
-  }
+    public void attach() {
+    }
+
+    public void checkFile() {
+    }
+
+    public void getFileSize() {
+    }
 
 }
