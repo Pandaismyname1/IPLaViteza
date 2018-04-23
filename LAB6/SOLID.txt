@@ -1,0 +1,6 @@
+SOLID
+SRP: clasele respecta SRP pentru ca fiecare are un scop/responsabilitate
+OCP: respecta OCP deoarece se pot extinde clase deja existente fara a modifica clasele curente
+LSP: nu suprascriem nicio metoda in clasele derivate astfel incat nu modifica comportamentul clasei principale
+ISP: nu avem functionalitati inutile in clase decat cele strict necesare
+DIP: respecta DIP deoarece niciun obiect nu depinde de o implementare a unei interfete de baza.
